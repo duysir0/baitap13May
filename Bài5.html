@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sắp xếp từ lớn đến bé</title>
+</head>
+<body>
+<h1>Sắp xếp thứ tự phần tử từ lớn đến bé</h1>
+<p>Có mảng X = [24, 2, -47, 4, 5, -3, 7]</p>
+<hr>
+<button onclick="tienhanhSapXep()">Sắp xếp</button>
+<p>Mảng X sau khi được sắp xếp:</p>
+<p id="result"></p>
+</body>
+<script>
+    const x = [24, 2, -47, 4, 5, -3, 7]
+    function tienhanhSapXep() {
+        x.sort(function(a, b){return b - a});
+        document.getElementById('result').innerHTML = `[${x}]`
+    }
+</script>
+</html>
+
+</body>
+</html>
