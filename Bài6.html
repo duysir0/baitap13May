@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lọc mảng</title>
+</head>
+<body>
+<h1>Lọc mảng ra chỉ số hoặc chỉ chữ</h1>
+<p>Cho mảng X = ['a','b','c',4,5,6]</p>
+<button onclick=stringFilter()>Lọc chữ</button>
+<button onclick=numFilter()>Lọc số</button>
+<hr>
+<p>Mảng X sau khi lọc:</p>
+<p id="result"></p>
+</body>
+<script>
+    x = [4, 5, 6, 'a', 'b', 'c',];
+    arrayRong = [];
+
+    function numFilter() {
+        for (i = 0; i < x.length; i++) {
+            if (typeof x[i] == 'number') {
+                arrayRong.push(x[i]);
+            }
+        } document.getElementById('result').innerHTML = arrayRong;
+        arrayRong = [];
+    }
+    function stringFilter() {
+        for (i = 0; i < x.length; i++) {
+            if (typeof x[i] === 'string') {
+                arrayRong.push(x[i]);
+            }
+        } document.getElementById('result').innerHTML = arrayRong;
+        arrayRong=[];
+    }
+
+</script>
+</html>
