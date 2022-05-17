@@ -14,24 +14,24 @@
 <p id="result"></p>
 </body>
 <script>
-    x = [4, 5, 6, 'a', 'b', 'c',];
-    arrayRong = [];
+    x = [4, 5, 6, 'a', 'b', 'c',];          //Khai báo mảng
+    arrayRong = [];                         //Tạo Array rỗng
 
     function numFilter() {
-        for (i = 0; i < x.length; i++) {
-            if (typeof x[i] == 'number') {
-                arrayRong.push(x[i]);
+        for (i = 0; i < x.length; i++) {    //Tạo lặp (chạy từ đầu đến đít mảng)
+            if (typeof x[i] == 'number') {  //Điều kiện: phần tử tại index thõa mãn 'là Number'
+                arrayRong.push(x[i]);       //Đẩy phần tử thõa mãn vào array Rỗng
             }
-        } document.getElementById('result').innerHTML = arrayRong;
-        arrayRong = [];
+        } document.getElementById('result').innerHTML = arrayRong;  //trả kết quả sau vòng lặp
+        arrayRong = [];                                             //làm rỗng mảng để nút sau ko Push thêm giá trị nữa
     }
     function stringFilter() {
-        for (i = 0; i < x.length; i++) {
-            if (typeof x[i] === 'string') {
-                arrayRong.push(x[i]);
+        for (i = 0; i < x.length; i++) {    //Tạo lặp (chạy từ đầu đến đít mảng)
+            if (typeof x[i] === 'string') { //Điều kiện: phần tử tại index thõa mãn 'là String'
+                arrayRong.push(x[i]);       //Đẩy phần tử thõa mãn vào array Rỗng
             }
-        } document.getElementById('result').innerHTML = arrayRong;
-        arrayRong=[];
+        } document.getElementById('result').innerHTML = arrayRong;  //trả kết quả sau vòng lặp
+        arrayRong=[];                                               //làm rỗng mảng để nút sau ko Push thêm giá trị nữa
     }
 
 </script>
